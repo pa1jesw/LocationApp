@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pa1.locationapp.Distance">
+
+
+    <TextView
+        android:id="@+id/textVieww"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:fontFamily="serif-monospace"
+        android:text="Distance between -"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etDest"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/etDest"
+        android:layout_marginTop="84dp"
+        android:ems="10"
+        android:hint="Start"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorAccent" />
+
+    <EditText
+        android:id="@+id/etDest"
+        android:hint="Destination"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etStart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        />
+
+    <Button
+        android:id="@+id/btnCal"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/colorAccent"
+
+        android:text="Calculate Distance"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:textSize="22dp"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textVieww"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:text="" />
+
+
+</RelativeLayout>

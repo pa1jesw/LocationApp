@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pa1.locationapp.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="147dp"
+        android:fontFamily="serif-monospace"
+        android:text="Your Current Location -"
+        android:textColor="@color/colorAccent"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:textSize="22dp"
+        android:fontFamily="casual"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnDistance"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:background="@color/colorAccent"
+        android:text="Share"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/btnDistance"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="69dp"
+        android:background="@color/colorPrimary"
+        android:text="calculate Distance"
+        android:textColor="@color/colorAccent" />
+
+
+
+</RelativeLayout>
